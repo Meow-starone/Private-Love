@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>for my lovely girl</title>
+    <meta name="keywords" content="text/html;charset=UTF-8" />
+	<link  type="text/css"  href="default.css"rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css"></link>
+	<style type="text/css">
+		#code {
+			float: left;
+			width: 440px;
+			height: 400px;
+			color: #FFFFFF;
+			font-family: "幼圆";
+			font-size: 14px;
+		}
+
+   body{
+   background:url("2.jpg");
+  background-size:1920px 1080px;
+  background-position-x:50%;
+ background-repeat:no-repeat;
+   }
+   
+	</style>
+</head>
+<body style="background-color: #FFACAC"> 
+<div style="display:none">
+
+    	
+<audio id="bgaudio" src="1.mp3" loop="loop"></audio>  
+           <script type="text/javascript">  
+            document.getElementById('bgaudio').play();  
+           </script>  
+
+
+    
+</div>
+<input type="hidden" id = "loveDate" value='2015-04-26 15:00:00' >
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code" style="display:none;">
+				 <span class="space">/**</span><br><span class="space">* We are both in HZNU ,</span><br><span class="space">* Thanked destiny.I can meet you in the crowd.</span><br><span class="space">*/</span><br><span class="space">Boy i = new Boy("Ly");</span><br><span class="space">Girl u = new Girl("myqingyun");</span><br><span class="space">// Apr 26, 2015, I told you I love you. </span><br><span class="space">i.love(u);</span><br><span class="space">// Luckily, you accepted and became my girlfriend eversince.</span><br><span class="space">u.accepted();</span><br><span class="space">// Since then, I cherish  u every day.</span><br><span class="space">i.cherish (u);</span><br><span class="space">// And take care of u and our love.</span><br><span class="space">i.takeCareOf(u);</span><br><span class="space">// You say that you may be fragile sometimes. </span><br><span class="space">// So I keep strong to give you reliance.</span><br><span class="space">offend you = wrong;</span><br><span class="space">while (angry) {</span><br><span class="space">i. apologetic(u);</span><br><span class="space">// Moon be could not have been grimmer. </span><br><span class="space">// and I am a huaidongxi.</span><br><span class="space">is offend u = me.huaidongxi();</span><br><span class="space">}</span><br><span class="space">// After a romantic wedding, we will live happily ever after.</span><br><span class="space">i.marry(u);</span><br><span class="space">i.liveHappilyWith(u);</span><br><span class="space">_</span><br><span class="space">	      </span><br><span class="space">	      </span><br><span class="space">	      </span><br><span class="space">	      </span><br><span class="space">	      </span>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						We have being in love
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+							{JF} - Love you forever<br/>
+						<div class="signature"> -- MuYun kirs</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			
+				
+					<div class="watermark">
+						<a href="mailto:Meow_223@163.com" target="_blank">content to MuYun's email </a>
+					</div>
+				
+			
+		
+	</div>
+	<div style="display: none">
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1de51c7a10685de3e9dd75efe6bc84dc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256941446'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256941446' type='text/javascript'%3E%3C/script%3E"));</script>
+	</div>
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="garden_dev.js"></script>
+<script type="text/javascript" src="functions_dev.js"></script>
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date(Date.parse($("#loveDate").val().replace(/-/g,  "/"))); 
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "喵，出错啦，更换浏览器。<br/>";
+	document.body.appendChild(msg);
+    document.execCommand("stop");
+} else {
+	$("#code").css("display", "");
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</html>
+	
