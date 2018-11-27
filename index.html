@@ -3,8 +3,10 @@
   <head>
     <title>for my lovely girl</title>
     <meta name="keywords" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link  type="text/css"  href="default.css"rel="stylesheet">
 	<link rel="stylesheet" href="style.css" type="text/css"></link>
+	 <link rel="manifest" href="manifest.json">
 	<style type="text/css">
 		#code {
 			float: left;
@@ -15,12 +17,12 @@
 			font-size: 14px;
 		}
 
-   body{
+/*   body{
    background:url("2.jpg");
   background-size:1920px 1080px;
   background-position-x:50%;
  background-repeat:no-repeat;
-   }
+   }*/
    
 	</style>
 </head>
@@ -37,10 +39,10 @@
     
 </div>
 <input type="hidden" id = "loveDate" value='2015-04-26 15:00:00' >
-	<div id="mainDiv">
+	<div id="mainDiv" style="margin-top: -60px;">
 		<div id="content">
 			<div id="code" style="display:none;">
-				 <span class="space">/**</span><br><span class="space">* We are both in HZNU ,</span><br><span class="space">* Thanked destiny.I can meet you in the crowd.</span><br><span class="space">*/</span><br><span class="space">Boy i = new Boy("Ly");</span><br><span class="space">Girl u = new Girl("myqingyun");</span><br><span class="space">// Apr 26, 2015, I told you I love you. </span><br><span class="space">i.love(u);</span><br><span class="space">// Luckily, you accepted and became my girlfriend eversince.</span><br><span class="space">u.accepted();</span><br><span class="space">// Since then, I cherish  u every day.</span><br><span class="space">i.cherish (u);</span><br><span class="space">// And take care of u and our love.</span><br><span class="space">i.takeCareOf(u);</span><br><span class="space">// You say that you may be fragile sometimes. </span><br><span class="space">// So I keep strong to give you reliance.</span><br><span class="space">offend you = wrong;</span><br><span class="space">while (angry) {</span><br><span class="space">i. apologetic(u);</span><br><span class="space">// Moon be could not have been grimmer. </span><br><span class="space">// and I am a huaidongxi.</span><br><span class="space">is offend u = me.huaidongxi();</span><br><span class="space">}</span><br><span class="space">// After a romantic wedding, we will live happily ever after.</span><br><span class="space">i.marry(u);</span><br><span class="space">i.liveHappilyWith(u);</span><br><span class="space">_</span><br><span class="space">	      </span><br><span class="space">	      </span><br><span class="space">	      </span><br><span class="space">	      </span><br><span class="space">	      </span>
+				 <span class="space">/**</span><br><span class="space">* We are both in HZNU ,</span><br><span class="space">* Thanked destiny.I can meet you in the crowd.</span><br><span class="space">*/</span><br><span class="space">Boy i = new Boy("Ly");</span><br><span class="space">Girl u = new Girl("myqingyun");</span><br><span class="space">// Apr 26, 2015, I told you I love you. </span><br><span class="space">i.love(u);</span><br><span class="space">// Luckily, you accepted and became my girlfriend eversince.</span><br><span class="space">u.accepted();</span><br><span class="space">// Since then, I cherish  u every day.</span><br><span class="space">i.cherish (u);</span><br><span class="space">// And take care of u and our love.</span><br><span class="space">i.takeCareOf(u);</span><br><span class="space">// You say that you may be fragile sometimes. </span><br><span class="space">// So I keep strong to give you reliance.</span><br><span class="space">offend you = wrong;</span><br><span class="space">while (angry) {</span><br><span class="space">i. apologetic(u);</span><br><span class="space">// Moon be could not have been grimmer. </span><br><span class="space">// and I am a huaidongxi.</span><br><span class="space">is offend u = me.huaidongxi();</span>
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
@@ -50,7 +52,7 @@
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-							{JF} - Love you forever<br/>
+							{''} - Love you forever<br/>
 						<div class="signature"> -- MuYun kirs</div>
 					</div>
 				</div>
@@ -60,7 +62,7 @@
 			
 				
 					<div class="watermark">
-						<a href="mailto:Meow_223@163.com" target="_blank">content to MuYun's email </a>
+						<a href="Muyunyixi.cn" target="_blank">content to MuYun's Blog </a>
 					</div>
 				
 			
@@ -98,16 +100,29 @@ if (!document.createElement('canvas').getContext) {
 	$("#code").css("display", "");
 	setTimeout(function () {
 		startHeartAnimation();
-	}, 5000);
+	}, 500);
 
 	timeElapse(together);
 	setInterval(function () {
 		timeElapse(together);
-	}, 500);
+	}, 100);
 
 	adjustCodePosition();
 	$("#code").typewriter();
 }
 </script>
+
+
+<script>
+  // 检测浏览器是否支持SW
+  if(navigator.serviceWorker != null){
+    navigator.serviceWorker.register('sw.js')
+    .then(function(registartion){
+      console.log('支持sw:',registartion.scope)
+    })
+  }
+</script>
+
+
 </html>
 	

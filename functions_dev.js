@@ -108,7 +108,7 @@ function timeElapse(c){
 
 function showMessages(){
     adjustWordsPosition();
-    $("#messages").fadeIn(5000, function(){
+    $("#messages").fadeIn(1000, function(){
         showLoveU()
     })
 }
@@ -124,5 +124,5 @@ function adjustCodePosition(){
 }
 
 function showLoveU(){
-    $("#loveu").fadeIn(3000)
+    $("#loveu").fadeIn(2000)
 };
